@@ -1,7 +1,7 @@
 # FreeCodeCamp-project
 FreeCodeCamp is an open source community that help you become a professional front end developer.
 <br><br>
-The curriculum include:
+The curriculum include:<br>
 -Responsive Web Design <br>
 -Javascript Algorithms And Data Structures <br>
 -Front End Libraries  <br>
