@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Survey Form</title>
+</head>
+<style>
+	body{
+		background: url('background.jpg') center no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+	h1,p {
+		display: flex;
+		 justify-content: center;
+		 font-family: monospace;
+	}
+	h1{
+		font-size: 50px;
+	}
+	p{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	form{
+		width:40%;
+		display: grid;
+		grid-gap: 10px;
+		justify-content: center;
+	}
+	#name,#email,#age,#course,#origin,#high-school,#heading,#event,#comment,#submit{
+		height: 40px;
+		border-radius: 7px;
+	}
+	#collapse{
+		width: 100%;
+		margin-left: 30%;
+		margin-top: 50px;
+	}
+
+	@media Screen and (max-width: 600px){
+		form{
+			width: 80%;
+		}
+		#collapse{
+			margin-left: 10%;
+		}
+	}
+
+	}
+	
+</style>
+
+<body>
+	<div id="title">
+		<h1 > Survey Form </h1>
+		<p> This is a survey form for all indonesian students in NTU.</p>
+	</div>
+
+<div id="collapse">
+	<form id="survey-form" method="POST" action="insert.php">
+		<input type="text" id="name" name="name"placeholder="What is your name?">
+		<input type="email" id="email" name="email" placeholder="What is your email?">
+		<input type="text" id="age" name="age"placeholder="How old are you?">
+		<input type="text" id="course" name="course" placeholder="what course are you studying?">
+		<input type="text" id="origin" name="origin" placeholder="what is your origin?">
+		<input type ="text" id="high-school" name="high_school" placeholder="From what High School or Junior College are you?">
+
+		<div id="heading"> What PINTU events do you know? state below</div>
+		<textarea id="event"name="PINTU_Event" style="width:80%;height: 80px;resize: none;"></textarea>
+
+		<div id="heading">Any comment?</div>
+		<textarea name="comment" id="comment" placeholder="we love your feedback!!" style="resize: none; height: 80px;width: 80%;"></textarea>
+		<input type="submit" id="submit" name="submit" style="background-color:lightgrey;height: 30px;width: 20%;">
+	</form>
+</div>
+
+</body>
+</html>
