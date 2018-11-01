@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US" manifest="demo.appcache">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,inital-scale=1.0">
+		<title> Andreas-Sujono</title>
+
+		<!-- To use the Font Awesome icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--To use the Bootstrap glyphicons-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- To use the Google icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- bootstrap using Jquery , popper.js , javascript library -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<!-- end of bootstarp library -->
+
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css">
+				@media screen and(max-width: 1100px){
+				.background1,.background2,.background3{
+					 background-attachment: scroll;
+					}
+				}
+				@media screen and (max-width: 900px){
+				#googleMap{
+					width: 100%;
+					height:300px;
+				}
+				.back2 .portfolio .images img{
+				width:33.33%;
+				height:170px;
+				}
+				.back3{
+					height: 800px;
+				}
+				#googleMap{
+					margin-bottom:20px;
+					}	
+				input[name="comment"],input[name="submit"]{
+					width:80%;
+				}	
+				nav ul .about, nav ul .portfolio, nav ul .contact{
+					display: none;
+				}				
+			}
+			@media screen and (max-width: 650px){
+				.back2 .portfolio .images img{
+				width:90%;
+				height:220px;
+				margin-top:10px;
+				}
+				.back1 #aboutMe .box1 p{
+				font-size: 16px;
+								}
+				.myLogo{
+					width: 325px;
+				}
+									}
+			@media screen and (max-width: 550px){
+				.myLogo{
+					width: 280px;
+			
+					}
+				
+		</style>
+
+	</head>
+
+	<body>
+		<div class="background1"><!-- add parralax background 1 -->
+			<nav id="nav">
+				<ul>
+					<li> <a href="#nav" title="Home"><i class="fa fa-home" style="font-size:20px;"></i> HOME</a></li>
+					<li class="about"> <a href="#aboutMe" title="about me"><i class="material-icons" style="font-size:18px">person</i> ABOUT</a></li>
+					<li class="portfolio"> <a href="#portfolio" title="portfolio"><i class="fa fa-newspaper-o" style="font-size:18px"></i> PORTFOLIO</a></li>
+					<li class="contact"> <a href="#contact" title="contact me"><i class="material-icons" style="font-size:16px;">contacts</i> CONTACT</a></li>
+				</ul>
+				<div id="search"><i class="fa fa-search" style="font-size:24px"></i></div><!-- serach bar -->
+
+			</nav>
+
+			<div class="myLogo"><span> Andreas Sujono </span></div>
+		</div> <!-- end for background image 1 -->
+
+		<div class="back1"><!-- background for first nav -->
+			<div id="aboutMe"><!-- first nav: about me-->
+				<section class="aboutMe"> ABOUT ME </section>
+
+				<div class="box1"> <!-- to seperate p -->
+					<div class="myImage">
+						<figure>
+							<figcaption><i class="material-icons" style="font-size:15px">person</i><span style="font-size:16px;">My photo </span></figcaption>
+							<img src="img/me.jpg" alt="myImage"/ class="img-fluid" style="max-width:180px; min-width:100px;height: auto;">
+						</figure>
+					</div>
+
+					<div class="content1">
+						<p> Welcome to my website, my name is Andreas Sujono. <i>A dreamer , an inventor ,and a computer enthusiastic</i></p>
+
+						<p> I really have a big interest in computer software as well as hardware.You can see all of my project in my portfolio below.</p>
+						<p>I have learnt : HTML, CSS, Javascript, Bootstrap, React & redux, Sass, JQuery, Angular.js, PHP, SQL & noSQL, Java, Python, C, C#, Arduino, Unity 3D.
+
+						<p> see more in <a href="https://github.com/Andreas-Sujono"> my github account </a> </p>
+					</div> <!-- end of content 1 -->
+					<p> I'm really good at: </p>
+					<p> Front End </p>
+					<div id="meter" class="progress" style="height: 20px;">
+					 <div class="progress-bar" style="width: 80%;background-color: grey; font-size: 20px;"> 80%</div>
+					</div>
+					<p> Back end </p>
+					<div id="meter" class="progress" style="height: 20px;">
+					 <div class="progress-bar" style="width: 50%;background-color: grey; font-size: 20px;"> 50%</div>
+					</div>
+					<p> Data Science </p>
+					<div id="meter" class="progress" style="height: 20px;">
+					 <div class="progress-bar" style="width: 30%;background-color: grey; font-size: 20px;"> 30%</div>
+					</div>
+
+				</div><!-- end of seperation of p -->
+
+			</div> <!-- end of the first nav: about me -->
+		</div><!-- end of background of the first nav -->
+
+		<div class="background2"> <!-- parralax background2 -->
+			<p id="portfolio"> PORTFOLIO </p>
+		</div> <!-- end of background image 2 -->
+
+		<div class="back2"><!-- add background for second nav:portfolio-->
+			<div class="portfolio"><!-- start of second nav: portfolio -->
+				<p class="myWork"> MY Work </p>
+				<p> here are some of my latest projects </p>
+				<div class="images">
+					<img class="img1" src="img/image1.jpg" alt="image1" data-toggle="modal" data-target="#myModal"/ >
+						<div class="modal" id="myModal" >
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<div class="modal-title">
+											title
+										</div>
+										<button class="close" data-dismiss="modal"> &times;</button>
+
+									</div>
+									<div class="modal-body">
+										<img class="img1" src = "img/image1.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					<img class="img2" src="img/image2.jpg" alt="image2"/>
+					<img class="img3" src="img/image3.jpg" alt="image3"/>
+					<img class="img4" src="img/image4.jpg" alt="image4"/>
+					<img class="img5" src="img/image5.jpg" alt="image5"/>
+					<img class="img6" src="img/image6.jpg" alt="image6"/>
+				</div><!-- ending of images gallery -->
+			</div><!-- end of second nav: portfolio -->
+		</div><!-- end of background for second nav -->
+
+		<div class="background3"><!-- start of parralax background 3 -->
+			<p id="contact">CONTACT </p>
+		</div><!-- end of parallax background 3 -->
+
+		<div class="back3"><!-- add background to the third nav: contact -->
+			<div class="contact"><!-- Start the third nav: contact -->
+				<p> where I study </p>
+				<p>I'd love your feedback! </p>
+				<div id="googleMap"> </div>
+				<ul style="list-style-type: none;">
+					<li class="address"><i class="material-icons">place</i> NTU (Nanyang Technological University), Singapore </li>
+					<li class="phone"><i class="fa fa-phone" style="font-size:24px"></i> Phone: +62 81290999182 </li>
+					<li class="email"> <i class="material-icons">email</i> Email: andreassujono@gmail.com</li>
+				</ul>
+				<form method="POST" action="" name="comment" style="margin-top: 20px;"><!-- form fill comment-->
+					<input name="name" type="text" placeholder="Name" >
+					<input name="email" type="text" placeholder="Email" br/>
+					<input name="comment" type="text" placeholder="comment" style="height: 100px;"/><br/>
+					<input type="submit" value="send comment" name="submit"/>
+				</form><!-- ending of filling form -->
+			</div><!-- end of the third nav: contact -->
+		</div><!-- ending of add background for the third nav -->
+
+		<footer><!-- footer include contact and copyrights -->
+			<div class="toTop"><a href="#nav" style="text-decoration: none; color: white;"> To The Top </a></div>
+
+			<ul class="logo" style="list-style-type: none;margin-top: 20px;margin-bottom: 80px;"><!-- social media contact -->
+				<li class="facebook"><i class="fa fa-facebook" style="font-size:24px;"></i> Facebook: Andreas Sujono</li>
+				<li class="instagram"><i class="fa fa-instagram" style="font-size:24px;"></i> Instagram: Andreas_s55</li>
+				<li class="twitter"><i class="fa fa-twitter" style="font-size:24px;"></i> Twitter: Andreas Sujono</li>
+				<li class="line">line id : andreas_s</li>
+			</ul><!-- end of social media contact-->
+
+			<div class="copyright">
+				&#169; 2018 ANDREAS SUJONO ALL RIGHTS RESERVED
+			</div>
+
+		</footer> <!-- enf of the footer -->
+
+
+		<script>//script for google API 
+		function myMap() {
+		  var mapCanvas = document.getElementById("googleMap");
+		  var mapOptions = {
+		    center: new google.maps.LatLng(1.348310, 103.683135), zoom: 16
+		  };
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0N8Qb9sKemCiJK2szLGGx-g4id64EZmE&callback=myMap"></script>
+
+	</body>
+</html>
+
+	</body>
+</html>
