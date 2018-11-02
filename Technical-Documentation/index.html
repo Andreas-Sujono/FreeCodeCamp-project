@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	@media screen and (max-width: 800px){
+		#aside{
+			display: none;
+		}
+		#box{
+			width: 100%;
+		}
+	}
+
+</style>
+<body>
+
+	<div id="aside">
+		<ul>
+			<li> arduino 
+				<ul>
+				<li style="font-weight: bold;font-style: italic;text-decoration: underline;">car controller</li>
+				<li>........</li>
+				<li>........</li>
+				</ul>
+			</li>
+			<li> Unity
+				<ul>
+				<li> 2D animation </li>
+				<li> 3D animation </li>
+				<li>........</li>
+				</ul>
+			</li>
+			<li> HTML CSS
+				<ul>
+				<li>  form tag </li>
+				<li> progress bar </li>
+				<li>........</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div id="box">
+		<div id="title"> Arduino  bluetooth car controller</div>
+		<div id="content">
+			<div class="equipment">
+				<div class="vl"></div>
+				<div class="vl2"></div>
+				<h2>materials needed:</h2>
+				<ul>
+					<li> Arduino board </li>
+					<li> 12V High Torque DC Motor </li>
+					<li> L298N Driver </li>
+					<li> HC-05 Bluetooth Module </li>
+					<li> Batteries </li>
+				</ul>
+
+				<img src="https://cdn.sparkfun.com//assets/parts/6/8/1/6/11224-01.jpg">
+				<img src="https://ae01.alicdn.com/kf/HTB1t2fFNpXXXXbKaFXXxh4dFXXXi/775-DC-Motor-DC-12V-36V-3500-9000-RPM-Ball-Bearing-Large-Torque-High-Power-low.jpeg_640x640.jpeg">
+				<img src="https://ae01.alicdn.com/kf/HTB1.Mm9c6fguuRjy1zeq6z0KFXao/L298N-Dual-H-Bridge-DC-Stepper-Motor-Driver-Controller-Board-Module-for-Uno-R3-Raspberry-Pi.jpg_640x640.jpg">
+				<img src="https://cdn1.bigcommerce.com/server800/a8995/products/666/images/1969/HC_05__32433.1424220923.1280.1280.jpg?c=2">
+
+			</div>
+
+			<div class="procedure">
+				<h2> Procedure </h2>
+				<h3>Mount the Hardware</h3>
+				<img src="https://cdn.instructables.com/F0N/BZC3/IA0WVP9A/F0NBZC3IA0WVP9A.LARGE.jpg">
+				<p>The mounting of the robotic platform is very easy. If you buy one like that, you will receive a manual with all steps.</p>
+
+				<p>To connect the electric circuit, you have to fit the shield on the Arduino and then connecting the motors to the shield. After that you have to connect the bluetooth module. The module pins depends on what you are using, but basically it has: VCC (connected to the 5V pin of the Arduino), GND (connected on GND on Arduino), RX (connected to the TX pin of the arduino) and TX (connected to the RX pin of the Arduino).</p>
+
+				<h3> code </h3>
+				<p>The code is also uncomplicated.</p>
+
+				<p>- To control the motors, used the library <\AFMotor.h\>.</p>
+
+				<p>- The communication between the smartphone and the Bluetooth module was done using the serial communication arduino.</p>
+
+			</div>
+		</div> 
+	</div>
+
+</body>
+</html>
